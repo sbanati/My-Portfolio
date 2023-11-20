@@ -76,6 +76,13 @@ header h1 {
   color: black;  
 }
 
+.fa-arrow-up-right-from-square {
+  font-size: 2.5rem;
+  color: black;
+}
+
+
+
 .hero-section img {
   max-width: 50%;
   height: 35rem;
@@ -195,4 +202,126 @@ nav a:hover {
   font-size: 1.7rem;
   font-weight: 500;
   line-height: 1.5;
+}
+
+.portfolio_section {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  text-align: left;
+}
+
+.portfolio-header {
+  color: #2d2e32;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  margin-right: 20rem;
+  padding: 10rem;
+}
+
+.portfolio-header h3 {
+  color: #147efb;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  margin-right: 60rem
+}
+
+.portfolio-header p {
+  color: #2d2e32;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center; /* Center the items */
+}
+
+.portfolio-item {
+  flex: 1;
+  margin-bottom: 5rem;
+}
+
+.portfolio-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 120rem;
+  margin-bottom: 10rem;
+}
+
+.portfolio-content {
+  display: flex;
+  align-items: center;
+}
+
+.portfolio-content img {
+  width: 50%;
+  height: auto;
+}
+
+.portfolio-content > div {
+  flex: 1;
+  padding: 1rem;
+}
+
+/* Larger card style */
+.larger-card {
+  flex: 2;
+  margin-bottom: 2rem;
+}
+
+.portfolio-text {
+  position: relative;
+}
+
+.icons-container1 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+  margin-bottom: -25rem;
+}
+  
+.icon-with-text1 {
+  display: flex;
+  align-items: center;
+  
+
+}
+
+.icon-with-text1 span {
+  font-weight: 500;
+  font-size: 1.7rem;
+  margin-left: 0.5rem;
+}
+
+
+
+.project-1 .portfolio-text .project-title {
+  
+  font-size: 2.5rem;
+  color: #2d2e32;
+  font-weight: 600;
+  margin-top: -30rem;
+  margin-left: 14rem;
+
+}
+
+.project-1 .portfolio-text .project-description {
+  margin-top: 10rem;
+  color: #767676;
+  font-size: 1.7rem;
+  font-weight: 500;
+  text-align: center;
+  
+
 }
