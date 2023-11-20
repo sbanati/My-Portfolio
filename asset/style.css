@@ -1,7 +1,5 @@
 
 
-
-
 * {
   margin: 0;
   padding: 0;
@@ -81,6 +79,20 @@ header h1 {
   color: black;
 }
 
+.icon-with-text {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: auto;
+  
+}
+
+.icon-with-text span {
+  font-weight: 500; 
+  font-size: 1.7rem;
+  gap: 5rem;
+}
+
 
 
 .hero-section img {
@@ -112,6 +124,33 @@ header h1 {
   line-height: 1.6;
 }
 
+.skills {
+  align-items: center;
+  display: flex;
+  font-size: 1.7rem;
+  left: 25%;
+  bottom: 25%;
+  position:absolute;
+  gap: 5rem
+}
+
+.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.skills ul li img {
+  height: 10rem;
+  width: 11rem;
+  top: 10%;
+  max-width: 100%;
+  gap: 3rem;
+}
+
+
+
+
 nav a {
   color: #2d2e32;
   text-decoration: none;
@@ -135,8 +174,7 @@ nav a:hover {
   text-align: center;
 }
 
-
-/* About section Starts here */
+/* About Customs */
 
 
 .about_section {
@@ -203,6 +241,12 @@ nav a:hover {
   font-weight: 500;
   line-height: 1.5;
 }
+
+
+
+
+
+/* Portfolio Customs */
 
 .portfolio_section {
   background-color: #f9f9f9;
@@ -324,4 +368,48 @@ nav a:hover {
   text-align: center;
   
 
+}
+
+.project-2 .portfolio-text .project-title {
+margin-top: -15rem;
+font-size: 2.5rem;
+color: #2d2e32;
+font-weight: 600;
+margin-left: 20rem;
+
+}
+
+.project-2 .portfolio-text .project-description {
+color:#767676;
+font-size: 1.6rem;
+font-weight: 500;
+text-align: center;
+margin-top: 5rem;
+}
+
+
+.icons-container2 {
+position: absolute;
+bottom: 0;
+
+display: flex;
+gap: 5rem;
+margin-bottom: -12rem;
+left: 20rem;
+}
+
+
+
+.icon-with-text2 {
+display: flex;
+align-items: center;
+
+}
+
+
+
+.icon-with-text2 span {
+font-weight: 500;
+font-size: 1.7rem;
+margin-left: 0.5rem;
 }
