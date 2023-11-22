@@ -3,9 +3,9 @@
 
 
 
+/*      */
 
-
-
+/*This resets the styles for the elements of the page */
 
 * {
   margin: 0;
@@ -13,18 +13,27 @@
   box-sizing: border-box;
 }
 
+
+/* set base font-size for the document. So 1rem=10px for better
+calculations. Also set the smooth scrolling to enable.      */
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
   
 }
 
-
+/* Styles applied to all the body     */
 body {
   font-family: 'Poppins', sans-serif;
   position:relative;
   
 }
+
+
+/* Styles applied to all the header. Note added sticky so the header bar
+would move as we scroll. So navigation can happen with the mouse clicks on
+each nav section.  */
 
 header {
   position: sticky;
@@ -40,12 +49,17 @@ header {
   
 }
 
+/* When you mouse over my name on top left (the header 1) it shows a 
+cursor instead of I. This just feels a bit cleaner  */
+
 header h1 {
   cursor: pointer;
 }
-  
+ 
+/* Styles for the Hero section. Important to allow me to space the image
+and the text. Flex properties coming in clutch :)  */
+
 .hero-section {
-  /* Other styles remain unchanged */
   background-size: cover;
   background-color:#f9f9f9;
   padding: 20rem;
@@ -53,16 +67,21 @@ header h1 {
   flex-direction:row;
   align-items: center;
   justify-content: center;
-  text-align: left; /* Align text to the left */
+  text-align: left; 
 }
 
-.hero-text {
-  /* Other styles remain unchanged */
+/* styling for the hero-text. Mainly allowing me to justify the text for 
+a cleaner look, this actually took me a while to figure out, for the longest
+time my text wasnt justified and it was so annoying.   */
 
-  text-align: left; /* Align text to the left */
+.hero-text {
+
+  text-align: left; 
   max-width: 50rem;
 }
 
+/* Styles applying to the socials icons in the hero section. Another
+flex box moment :) making life so much easier.  */
 
 .hero-text span {
   cursor:pointer; 
@@ -72,18 +91,21 @@ header h1 {
 }
 
 
+/* twitter and github icons from font.awesome, customized here. They were stiled the same so they can together  */
+
 .fa-x-twitter,
 .fa-github {
   font-size: 3rem;
   color: black;  
 }
 
+/* arrow icon from font.awesome, customized here, */
 .fa-arrow-up-right-from-square {
   font-size: 2.5rem;
   color: black;
 }
 
-
+/* container for the text around the icons */
 .icon-with-text {
   display: flex;
   align-items: center;
@@ -91,7 +113,7 @@ header h1 {
   margin-top: auto;
   
 }
-
+/* the exact customs for the actual text of the icons */
 .icon-with-text span {
   font-weight: 500; 
   font-size: 1.7rem;
@@ -99,7 +121,7 @@ header h1 {
 }
 
 
-
+/* staw hat luffy goat img for hero section. Roudned into a circle and size reduced */
 .hero-section img {
   max-width: 50%;
   height: 35rem;
@@ -110,7 +132,7 @@ header h1 {
   
   
 }
-
+/* Styles applied to the h2 heading in the hero section */
 .hero-section h2 {
   font-size: 5.5rem;
   margin-bottom: 2rem;
@@ -121,7 +143,7 @@ header h1 {
 
 
 }
-
+/* Styles applied to the <p> text in the hero section */
 .hero-section p {
   font-size: 1.8rem;
   color: #555;
@@ -129,9 +151,7 @@ header h1 {
   line-height: 1.6;
 }
 
-
-
-
+/* Styles applied to the anchors in the nav section */
 
 nav a {
   color: #2d2e32;
@@ -144,20 +164,19 @@ nav a {
   transition: color 0.3s ease;
   
 }
-
+/* Style applied to the nav anchors for mouse over */
 nav a:hover {
   color: #147efb
 }
 
 
-
+/* Generic style applied to the section element */
 .section {
   padding: 2rem;
   text-align: center;
 }
 
-/* About Customs */
-
+/*Style applied to the about section so where the content will be on the page. Background color and padding etc. */
 
 .about_section {
   background-size: cover;
@@ -171,8 +190,7 @@ nav a:hover {
 }
 
 
-
-
+/*Style applied to where the about content will begin, positioning the box etc  */
 .about-content {
   align-items: center;
   display: flex;
@@ -180,7 +198,7 @@ nav a:hover {
   
 }
 
-
+/* Style applied to the about sections h3 header being the ABOUT title. The color/font/and text styling  */
 .about_section h3 {
   color: #147efb;
   font-size: 2rem;
@@ -189,40 +207,44 @@ nav a:hover {
   margin-bottom: 1rem;
 }
 
+/* Style applied to the about section h4 header being the about 1 liner */
 .about_section h4 {
   color:#2d2e32;
   font-size: 2.5rem;
   line-height: 1.4;
   margin-bottom: 2rem;
 }
-
+/* Style/Formatting for the about card , where the about content will be enclosed in  */
 .about-card {
   display:flex;
   border: 1px solid #fff;
   border-radius: 8px;
-  overflow:hidden;
+  height: auto;
   margin: 0 auto;
-  max-width: 1000px;
-  
+  max-width: 1000px;  
 }
 
+/* Formatting for the about-img container */
 .about-img {
   flex: 1;
-  overflow:hidden;
+  height: auto;
 }
-
+/* Style applied to the actual about image */
 .about-img img {
   width:100%;
   height: auto;
   border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  border-top-right-radius: 8px; 
 }
 
+/* Formatting for the about-text container */
 
 .about-text {
   flex: 1;
   padding: 20px
 }
+
+/* Style for the <p> text in the about section  */
 
 .about-text p {
   color: #767676;
@@ -230,9 +252,6 @@ nav a:hover {
   font-weight: 500;
   line-height: 1.5;
 }
-
-
-
 
 
 /* Portfolio Customs */
@@ -329,7 +348,6 @@ nav a:hover {
   display: flex;
   align-items: center;
   
-
 }
 
 .icon-with-text1 span {
@@ -352,7 +370,7 @@ nav a:hover {
 
 .project-1 .portfolio-text .project-description {
   margin-top: 10rem;
-  color: #767676;
+  color: #545454;
   font-size: 1.7rem;
   font-weight: 500;
   text-align: center;
@@ -365,12 +383,12 @@ margin-top: -15rem;
 font-size: 2.5rem;
 color: #2d2e32;
 font-weight: 600;
-margin-left: 20rem;
+margin-left: 22rem;
 
 }
 
 .project-2 .portfolio-text .project-description {
-color:#767676;
+color:#545454;
 font-size: 1.3rem;
 font-weight: 500;
 text-align: center;
@@ -378,27 +396,51 @@ margin-top: 5rem;
 }
 
 
+.icons-container2 {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  gap: 5rem;
+  margin-bottom: -12rem;
+  left: 20rem;
+  }
+  
+  
+  
+  .icon-with-text2 {
+  display: flex;
+  align-items: center;
+  
+  }
+  
+  
+  .icon-with-text2 span {
+  font-weight: 500;
+  font-size: 1.7rem;
+  margin-left: 0.5rem;
+  }
+
+
 .project-3 .portfolio-text .project-title {
   margin-top: -15rem;
   font-size: 2.5rem;
   color: #2d2e32;
   font-weight: 600;
-  margin-left: 20rem;
+  margin-left: 22rem;
   
   }
   
   .project-3 .portfolio-text .project-description {
-  color:#767676;
+  color:#545454;
   font-size: 1.3rem;
   font-weight: 500;
   text-align: center;
   margin-top: 5rem;
   }
 
-.icons-container2 {
+.icons-container3 {
 position: absolute;
 bottom: 0;
-
 display: flex;
 gap: 5rem;
 margin-bottom: -12rem;
@@ -407,15 +449,14 @@ left: 20rem;
 
 
 
-.icon-with-text2 {
+.icon-with-text3 {
 display: flex;
 align-items: center;
 
 }
 
 
-
-.icon-with-text2 span {
+.icon-with-text3 span {
 font-weight: 500;
 font-size: 1.7rem;
 margin-left: 0.5rem;
@@ -446,7 +487,7 @@ margin-left: 0.5rem;
 }
 
 .contact-title h4 {
-  color: #147efb;
+  color: #0351AB;
   font-size: 1.7rem;
   font-weight: 700;
   margin-bottom: 1rem;
@@ -478,7 +519,7 @@ margin-left: 0.5rem;
   align-items: center;
   color:#147efb;
   display: flex; 
-  height: rem;
+  height: 5rem;
   width: 5rem;
   justify-content: center;
   font-size: 3rem;
