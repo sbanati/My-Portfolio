@@ -1,4 +1,15 @@
+:root {
+  --head-blue: #147efb;
+  --black-font: #2d2e32;
+  --accent-color: #0351AB;
+  --background-color: #f9f9f9;
+  --text-color: #555;
+  --border-color: #ddd;
+  --whiteground-color: #fff;
+  --about-text: #767676;
+  --access-portfolio:#545454;
 
+}
 
 
 
@@ -37,8 +48,8 @@ each nav section.  */
 
 header {
   position: sticky;
-  background-color:#fff;
-  color: black;
+  background-color: var(--whiteground-color);
+  color: var(--black-font);
   padding: 3rem;
   display: flex;
   justify-content: space-between;
@@ -61,7 +72,7 @@ and the text. Flex properties coming in clutch :)  */
 
 .hero-section {
   background-size: cover;
-  background-color:#f9f9f9;
+  background-color:var(--background-color);
   padding: 20rem;
   display: flex;
   flex-direction:row;
@@ -96,13 +107,13 @@ flex box moment :) making life so much easier.  */
 .fa-x-twitter,
 .fa-github {
   font-size: 3rem;
-  color: black;  
+  color: var(--black-font);  
 }
 
 /* arrow icon from font.awesome, customized here, */
 .fa-arrow-up-right-from-square {
   font-size: 2.5rem;
-  color: black;
+  color:var(--black-font);
 }
 
 /* container for the text around the icons */
@@ -137,7 +148,7 @@ flex box moment :) making life so much easier.  */
   font-size: 5.5rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
-  color: black;
+  color:var(--black-font);
   line-height: 1.2;
   margin-right: 6rem;
 
@@ -146,7 +157,7 @@ flex box moment :) making life so much easier.  */
 /* Styles applied to the <p> text in the hero section */
 .hero-section p {
   font-size: 1.8rem;
-  color: #555;
+  color:var(--text-color);
   font-weight: 500;
   line-height: 1.6;
 }
@@ -166,7 +177,7 @@ nav a {
 }
 /* Style applied to the nav anchors for mouse over */
 nav a:hover {
-  color: #147efb
+  color:var(--head-blue)
 }
 
 
@@ -180,7 +191,7 @@ nav a:hover {
 
 .about_section {
   background-size: cover;
-  background-color:#fff;
+  background-color:var(--whiteground-color);
   padding: 20rem;
   display: flex;
   flex-direction:row;
@@ -200,7 +211,7 @@ nav a:hover {
 
 /* Style applied to the about sections h3 header being the ABOUT title. The color/font/and text styling  */
 .about_section h3 {
-  color: #147efb;
+  color:var(--head-blue);
   font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -209,7 +220,7 @@ nav a:hover {
 
 /* Style applied to the about section h4 header being the about 1 liner */
 .about_section h4 {
-  color:#2d2e32;
+  color:var(--black-font);
   font-size: 2.5rem;
   line-height: 1.4;
   margin-bottom: 2rem;
@@ -217,7 +228,7 @@ nav a:hover {
 /* Style/Formatting for the about card , where the about content will be enclosed in  */
 .about-card {
   display:flex;
-  border: 1px solid #fff;
+  border: 1px solid var(--whiteground-color);
   border-radius: 8px;
   height: auto;
   margin: 0 auto;
@@ -247,7 +258,7 @@ nav a:hover {
 /* Style for the <p> text in the about section  */
 
 .about-text p {
-  color: #767676;
+  color: var(--about-text);
   font-size: 1.7rem;
   font-weight: 500;
   line-height: 1.5;
@@ -257,7 +268,7 @@ nav a:hover {
 /* Portfolio section formatting, so the position on the page. */
 
 .portfolio_section {
-  background-color: #f9f9f9;
+  background-color:var(--background-color);
   padding: 2rem;
   text-align: left;
 }
@@ -265,7 +276,7 @@ nav a:hover {
 /* Style applied to the Portfolio header, font,size,color,position */
 
 .portfolio-header {
-  color: #2d2e32;
+  color:var(--black-font);
   font-size: 2.5rem;
   margin-bottom: 2rem;
   justify-content: left;
@@ -277,7 +288,7 @@ nav a:hover {
 /* Style applied to the portfolio heading3 text.  */
 
 .portfolio-header h3 {
-  color: #147efb;
+  color: var(--head-blue);
   font-size: 2.5rem;
   margin-bottom: 1rem;
   margin-right: 60rem
@@ -286,7 +297,7 @@ nav a:hover {
 /* Styles applied to the portfolio-header <p> text   */
 
 .portfolio-header p {
-  color: #2d2e32;
+  color: var(--black-font);
   font-size: 2.5rem;
   font-weight: 500;
   line-height: 1.6;
@@ -310,7 +321,7 @@ nav a:hover {
 /* Styles applied to the portfolio card container.  */
 
 .portfolio-card {
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   overflow: hidden;
   margin: 0 auto;
@@ -377,7 +388,7 @@ nav a:hover {
 .project-1 .portfolio-text .project-title {
   
   font-size: 2.5rem;
-  color: #2d2e32;
+  color: var(--black-font);
   font-weight: 600;
   margin-top: -30rem;
   margin-left: 14rem;
@@ -388,7 +399,7 @@ nav a:hover {
 
 .project-1 .portfolio-text .project-description {
   margin-top: 10rem;
-  color: #545454;
+  color: var(--access-portfolio);
   font-size: 1.7rem;
   font-weight: 500;
   text-align: center; 
@@ -399,7 +410,7 @@ nav a:hover {
 .project-2 .portfolio-text .project-title {
 margin-top: -15rem;
 font-size: 2.5rem;
-color: #2d2e32;
+color: var(--black-font);
 font-weight: 600;
 margin-left: 22rem;
 }
@@ -407,7 +418,7 @@ margin-left: 22rem;
 /* Styles applied to the descriptive text for project2  */
 
 .project-2 .portfolio-text .project-description {
-color:#545454;
+color:var(--access-portfolio);
 font-size: 1.3rem;
 font-weight: 500;
 text-align: center;
@@ -446,7 +457,7 @@ margin-top: 5rem;
 .project-3 .portfolio-text .project-title {
   margin-top: -15rem;
   font-size: 2.5rem;
-  color: #2d2e32;
+  color: var(--black-font);
   font-weight: 600;
   margin-left: 22rem;
   
@@ -455,7 +466,7 @@ margin-top: 5rem;
 /* Style applied to the project description text for project3 card  */
 
   .project-3 .portfolio-text .project-description {
-  color:#545454;
+  color:var(--access-portfolio);
   font-size: 1.3rem;
   font-weight: 500;
   text-align: center;
@@ -492,7 +503,7 @@ margin-left: 0.5rem;
 /*Formatting the contact section on the page */
 
 .contact-section {
-  background-color: #fff;
+  background-color: var(--whiteground-color);
   padding: 8rem;
   
 }
@@ -515,7 +526,7 @@ margin-left: 0.5rem;
 /* Style applied to the title of the contact section  */
 
 .contact-title h4 {
-  color: #0351AB;
+  color: var(--accent-color);
   font-size: 1.7rem;
   font-weight: 700;
   margin-bottom: 1rem;
@@ -524,7 +535,7 @@ margin-left: 0.5rem;
 
 /* Style applied to the contact sections <p> text   */
 .contact-title p {
-  color: #2d2e32;
+  color: var(--black-font);
   font-size: 2.5rem;
   font-weight: 700;
 
@@ -552,7 +563,7 @@ margin-left: 0.5rem;
 
 .contact-icon-box span {
   align-items: center;
-  color:#147efb;
+  color:var(--head-blue);
   display: flex; 
   height: 5rem;
   width: 5rem;
@@ -573,14 +584,14 @@ margin-left: 0.5rem;
 /* Style for the contact info text   */
 
 .contact-info h5 {
-  color: #2d2e32;
+  color: var(--black-font);
   font-size: 2rem;
 }
 
 /* Style for the contact info anchor point text  */
 
 .contact-info a {
-  color:#2d2e32;
+  color:var(--black-font);
   text-decoration: none;
   font-size: 1.7rem;
   
@@ -589,7 +600,7 @@ margin-left: 0.5rem;
 /* Style for the contact anchor point text hover   */
 
 .contact-info a:hover {
-  color: #147efb;
+  color: var(--head-blue);
 }
 
 
@@ -620,7 +631,7 @@ margin-left: 0.5rem;
 
 /* Style applied to the about section h4 header being the about 1 liner */
 .about_section h4 {
-  color:#2d2e32;
+  color:var(--black-font);
   font-size: 1.7rem;
   line-height: 1.4;
   margin-bottom: 1rem;
@@ -629,7 +640,7 @@ margin-left: 0.5rem;
 
 .about_section {
   background-size: cover;
-  background-color:#fff;
+  background-color:var(--whiteground-color);
   padding: 10rem;
   display: flex;
   flex-direction:row;
@@ -639,7 +650,7 @@ margin-left: 0.5rem;
 }
 .about-card {
   display: flex;
-  border: 1px solid #fff;
+  border: 1px solid var(--whiteground-color);
   border-radius: 8px;
   height: auto;
   margin: 0 auto;
@@ -666,14 +677,14 @@ margin-left: 0.5rem;
   
   /* Styles for the <p> text in the about section */
   .about-text p {
-    color: #767676;
+    color: var(--about-text);
     font-size: 1.5rem;
     font-weight: 500;
 
     }
     
     .portfolio-header {
-      color: #2d2e32;
+      color: var(--black-font);
       font-size: 1.7rem;
       
       justify-content: left;
@@ -685,7 +696,7 @@ margin-left: 0.5rem;
     /* Style applied to the portfolio heading3 text.  */
     
     .portfolio-header h3 {
-      color: #147efb;
+      color: var(--head-blue);
       font-size: 2.5rem;
       margin-bottom: 1rem;
       margin-right: 31.5rem
@@ -694,7 +705,7 @@ margin-left: 0.5rem;
     /* Styles applied to the portfolio-header <p> text   */
     
     .portfolio-header p {
-      color: #2d2e32;
+      color: var(--black-font);
       font-size: 1.5rem;
       font-weight: 500;
       line-height: 1rem;
@@ -710,7 +721,7 @@ margin-left: 0.5rem;
     .project-1 .portfolio-text .project-title {
   
       font-size: 1.5rem;
-      color: #2d2e32;
+      color: var(--black-font);
       font-weight: 600;
       margin-top: -10rem;
       margin-right: 10rem;
@@ -723,7 +734,7 @@ margin-left: 0.5rem;
     
     .project-1 .portfolio-text .project-description {
       margin-top: 1rem;
-      color: #545454;
+      color: var(--access-portfolio);
       font-size: 1.3rem;
       font-weight: 500;
       justify-content: left;
@@ -746,7 +757,7 @@ margin-left: 0.5rem;
   /* Styles applied to the descriptive text for project2  */
   
   .project-2 .portfolio-text .project-description {
-  color:#545454;
+  color:var(--access-portfolio);
   font-size: 1.2rem;
   font-weight: 500;
   
@@ -780,7 +791,7 @@ margin-left: 0.5rem;
     }
 
 .project-3 .portfolio-text .project-description {
-  color:#545454;
+  color:var(--access-portfolio);
   font-size: 1.2rem;
   font-weight: 500;
   
@@ -812,20 +823,6 @@ margin-left: 0.5rem;
     font-size: 1.7rem;
     margin-left: 0.5rem;
     }
-
-
-    
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
  
  
     }
