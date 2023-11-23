@@ -40,7 +40,9 @@ layout of my portfolio will also evolve as I do. <p>
 ## Screenshots
 
 <img src="portfolio-pic.png">
+<br>
 
+<p> Live site link: https://sbanati.github.io/My-Portfolio/ </p>
 
 
 ***
