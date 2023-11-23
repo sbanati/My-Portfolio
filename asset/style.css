@@ -1049,9 +1049,7 @@ margin-left: 0.5rem;
 
 }
 
-
-
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1025px) and (max-width: 1073px){
   /* Styles for largetr screens  such as desktops and bigger */
 
 
@@ -1218,3 +1216,4 @@ margin-left: 0.5rem;
 
 
 }
+
