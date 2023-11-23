@@ -65,10 +65,13 @@ folder. I am not an artsy person and this project was out of my comfort zone. I 
 humbled very quickly. I realized I have to walk before I can run, but I can still try to push myself. 
 
 The main inspiration I got from these website ideas was possible layout ideas and minimalist approaches. My journey
-has just started but I am constantly practicing and trying new things. I also saw how they structured some html elements.   
+has just started but I am constantly practicing and trying new things. I also saw how they structured some html elements. 
+The third video was a content creator who judged peoples portfolios and I used this video as inspiration again to see what different 
+types of portfolio layouts and whats possible and not. 
 
 https://www.youtube.com/watch?v=KFJbIyqgGt0 <br>
 https://www.youtube.com/watch?v=k3F1PyBX8pI&t=1523s
+https://www.youtube.com/watch?v=Eb6yFhkzpmI&t=254s
 
 I also utilized the student mini project for week 2 to help with understadning flexbox properties and structuring the HTML
 with that in mind. 
