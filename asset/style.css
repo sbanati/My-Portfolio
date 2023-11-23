@@ -601,8 +601,7 @@ margin-left: 0.5rem;
     padding: 10rem;
   }
 
-  
-  
+
   .hero-section img {
 
     height: auto;
@@ -676,7 +675,7 @@ margin-left: 0.5rem;
     .portfolio-header {
       color: #2d2e32;
       font-size: 1.7rem;
-      margin-bottom: 10rem;
+      
       justify-content: left;
       margin-right: 10rem;
       padding: 5rem;
@@ -729,27 +728,104 @@ margin-left: 0.5rem;
       font-weight: 500;
       justify-content: left;
       text-align: left;
+    }
 
       
-      .icon-with-text1 {
-        margin: 1rem; 
-      }
       
-      .icon-with-text1 span {
-        margin-left: 0.5rem; 
-      }
-
-
       .icons-container1 {
-        position: relative;
-        bottom: auto;
-        
-        
+        position: absolute;
+        bottom: 15rem; /* This adjusts the icons to move up in the card  */
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
         
       }
+  
+  
+  /* Styles applied to the descriptive text for project2  */
+  
+  .project-2 .portfolio-text .project-description {
+  color:#545454;
+  font-size: 1.2rem;
+  font-weight: 500;
+  
+  }
+  
+  /* Formatting applied to the icon container for the second project card  */
+  
+  .icons-container2 {
+    position: absolute;
+    bottom: 7rem;
+    display: flex;
+    left: 5rem;
+    
+    
+    }
+    
+    /* Formatting applied to the container of the icon text for project2   */
+    
+    .icon-with-text2 {
+    display: flex;
+    align-items: center;
+    
+    }
+    
+    /* Styles applied to the text for the icons in card2   */
+    
+    .icon-with-text2 span {
+    font-weight: 500;
+    font-size: 1.7rem;
+    margin-left: 0.5rem;
+    }
 
-      
+.project-3 .portfolio-text .project-description {
+  color:#545454;
+  font-size: 1.2rem;
+  font-weight: 500;
+  
+  }
+  
+  /* Formatting applied to the icon container for the second project card  */
+  
+  .icons-container3 {
+    position: absolute;
+    bottom: 7rem;
+    display: flex;
+    left: 5rem;
+    
+    
+    }
+    
+    /* Formatting applied to the container of the icon text for project2   */
+    
+    .icon-with-text3 {
+    display: flex;
+    align-items: center;
+    
+    }
+    
+    /* Styles applied to the text for the icons in card2   */
+    
+    .icon-with-text3 span {
+    font-weight: 500;
+    font-size: 1.7rem;
+    margin-left: 0.5rem;
+    }
 
-}
-}
 
+    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    }
